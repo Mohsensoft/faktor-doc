@@ -19,8 +19,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'faktor-doc'
-copyright = u'2018, Mohammad reza khalifeh'
+project = u' راهنمای نرم افزار فاکتور'
+copyright = u'2018, MohsenSoft'
 author = u'Mohammad reza khalifeh'
 
 # The short X.Y version
@@ -134,7 +134,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'faktor-doc.tex', u'faktor-doc Documentation',
-     u'MosenSoft', 'manual'),
+     u'MohsenSoft', 'manual'),
 ]
 
 
