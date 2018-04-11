@@ -1,33 +1,26 @@
-
-
- راهنمای فاکتور ۳ 
-=============================================
- یک سری متن در اینجا
-
-
-یک سری دیگه اینجا 
-
-
-ی هدر دیگه
-==========
-
-
-راهنما
-^^^^^^
-
-
-
+راهنمای فاکتور ۳
+=======================
 
 .. toctree::
-   :maxdepth: 2
-   :caption:  فهرست:
- ی چیزی 
-ی چیز دیگه
+   :maxdepth: 3
+   :caption:  فهرست مطالب
 
+   introduction
+   installation
+   definitions
+   main-window
+   setting-window
+   page-selection-window
+   bank-window
+   customer-window
+   backup
+   from-old-version
+   import-from-excel
+   password-protect-file
+   tips
+   download-pages
+   design-page-request
+   advanced
+   faq
+   changes-log
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
