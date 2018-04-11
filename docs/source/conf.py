@@ -76,7 +76,7 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -105,6 +105,9 @@ html_static_path = ['ystatic']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'faktor-docdoc'
 
+def setup(app):
+    app.add_stylesheet('css/custom.css')
+
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -131,7 +134,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'faktor-doc.tex', u'faktor-doc Documentation',
-     u'Mohammad reza khalifeh', 'manual'),
+     u'MosenSoft', 'manual'),
 ]
 
 
