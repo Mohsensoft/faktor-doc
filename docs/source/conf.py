@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u' راهنمای نرم افزار فاکتور'
-copyright = u'2018, MohsenSoft'
+copyright = u'2018, Mohsensoft'
 author = u'Mohammad reza khalifeh'
 
 # The short X.Y version
@@ -30,7 +30,7 @@ release = u'.rst'
 
 
 # -- General configuration ---------------------------------------------------
-
+language = "fa – Iranian"
 # If your documentation needs a minimal Sphinx version, state it here.
 #
 # needs_sphinx = '1.0'
