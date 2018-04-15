@@ -30,7 +30,7 @@ release = u'.rst'
 
 
 # -- General configuration ---------------------------------------------------
-language = "fa – Iranian"
+
 # If your documentation needs a minimal Sphinx version, state it here.
 #
 # needs_sphinx = '1.0'
@@ -60,7 +60,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = u'fa'
+language = 'fa'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -77,6 +77,7 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
+html_search_language = 'fa'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -98,15 +99,15 @@ html_static_path = ['ystatic']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = False     # optional.
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'faktor-docdoc'
 
-def setup(app):
-    app.add_stylesheet('css/custom.css')
+
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -114,15 +115,15 @@ def setup(app):
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
-    # 'papersize': 'letterpaper',
+     'papersize': 'letterpaper',
 
-    # The font size ('10pt', '11pt' or '12pt').
+    #The font size ('10pt', '11pt' or '12pt').
     #
     # 'pointsize': '10pt',
 
     # Additional stuff for the LaTeX preamble.
     #
-    # 'preamble': '',
+     'preamble': '\usepackege{xepersian}',
 
     # Latex figure (float) alignment
     #
