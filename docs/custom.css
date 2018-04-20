@@ -1,0 +1,58 @@
+@font-face {
+  font-family: GanjNamehSans-Regular;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/GanjNamehSans-Regular.eot');
+  src: url('../fonts/GanjNamehSans-Regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+     url('../fonts/GanjNamehSans-Regular.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+     url('../fonts/GanjNamehSans-Regular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+     url('../fonts/GanjNamehSans-Regular.ttf') format('truetype');
+}
+html{
+direction: rtl;
+}
+body{
+font-family:GanjNamehSans-Regular;
+
+}
+h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend{
+font-family:GanjNamehSans-Regular;
+direction:rtl;
+}
+.wy-plain-list-disc li, .rst-content .section ul li, .rst-content .toctree-wrapper ul li, article ul li{
+text-align:right;
+direction:rtl;
+}
+.toctree-l2{
+margin-left:unset;
+margin-right:24px;
+}
+
+.highlight .s1{
+float: left;
+}
+.wy-nav-side{
+left:unset;
+}
+
+.wy-nav-content{
+padding:  3.236em 1.618em;
+}
+.rst-versions{
+left:unset;
+}
+.wy-nav-content-wrap{
+margin-left:unset;
+margin-right:300px;
+}
+
+a[rel=next] {
+float:unset;
+}
+
+a[rel=next]:after{
+content:"بعدی"
+}
+a[rel=prev] {
+float:left;
+}
