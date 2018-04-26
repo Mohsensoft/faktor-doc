@@ -4,13 +4,15 @@
 -----------------------------
 نسبت به ویندوز خود یکی از مسیر های زیر را دنبال کنید:
 
-..برای ویندوز ایکس پی::
+برای ویندوز ایکس پی:
+.. code-block :: bat
 
-'Start -> Control Panel –> Regional and Language Options -> Customize'
+    'Start -> Control Panel –> Regional and Language Options -> Customize'
 
-..برای ویندوز 7::
+برای ویندوز 7:
+.. code-block :: bat
 
-'Start -> Control Panel -> Regional and Language -> Additional Settings'
+    'Start -> Control Panel -> Regional and Language -> Additional Settings'
 
 در ویندوز 8 و 10:
 
