@@ -5,11 +5,13 @@
 نسبت به ویندوز خود یکی از مسیر های زیر را دنبال کنید:
 
 برای ویندوز ایکس پی:
+
 .. code-block :: bat
 
     'Start -> Control Panel –> Regional and Language Options -> Customize'
 
 برای ویندوز 7:
+
 .. code-block :: bat
 
     'Start -> Control Panel -> Regional and Language -> Additional Settings'
