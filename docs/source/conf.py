@@ -43,6 +43,8 @@ extensions = [
     'sphinx.ext.githubpages',
 ]
 
+#pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['ytemplates']
 
@@ -65,7 +67,7 @@ language = 'fa'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
-exclude_patterns = []
+exclude_patterns = ['changes-log-new']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'

@@ -5682,7 +5682,7 @@ code,
     border: solid 1px #e1e4e5;
     font-size: 75%;
     padding: 0 5px;
-    font-family: "GanjNamehSans-Regular", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
     color: #E74C3C;
     overflow-x: auto
 }
@@ -5706,7 +5706,7 @@ article ul {
 .rst-content .toctree-wrapper ul li,
 article ul li {
     list-style: disc;
-    margin-left: 24px
+    margin-right: 24px
 }
 
 .wy-plain-list-disc li p:last-child,
@@ -6684,7 +6684,7 @@ footer span.commit .rst-content tt,
     border-right: solid 1px #e6e9ea;
     margin: 0;
     padding: 12px 12px;
-    font-family: "GanjNamehSans-Regular", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
     user-select: none;
     pointer-events: none
 }
@@ -6693,7 +6693,7 @@ footer span.commit .rst-content tt,
     white-space: pre;
     margin: 0;
     padding: 12px 12px;
-    font-family: "GanjNamehSans-Regular", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
     display: block;
     overflow: auto
 }
