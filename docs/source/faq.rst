@@ -12,9 +12,11 @@
 
 'Start -> Control Panel -> Regional and Language -> Additional Settings'
 
-..در ویندوز 8 و 10 ::
+در ویندوز 8 و 10:
 
-'This PC -> Open Control Panel -> Region -> Additional Settings'
+.. code-block :: bat
+
+    'This PC -> Open Control Panel -> Region -> Additional Settings'
 
 سپس گزینه Use native digits را اگر از تنظیمات کامل فارسی استفاده می کنید روی Context و الا روی National قرار دهید.
 
