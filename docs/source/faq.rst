@@ -4,17 +4,23 @@
 -----------------------------
 نسبت به ویندوز خود یکی از مسیر های زیر را دنبال کنید:
 
-..برای ویندوز ایکس پی::
+برای ویندوز ایکس پی:
 
-'Start -> Control Panel –> Regional and Language Options -> Customize'
+.. code-block :: bat
 
-..برای ویندوز 7::
+    'Start -> Control Panel –> Regional and Language Options -> Customize'
 
-'Start -> Control Panel -> Regional and Language -> Additional Settings'
+برای ویندوز 7:
 
-..در ویندوز 8 و 10 ::
+.. code-block :: bat
 
-'This PC -> Open Control Panel -> Region -> Additional Settings'
+    'Start -> Control Panel -> Regional and Language -> Additional Settings'
+
+در ویندوز 8 و 10:
+
+.. code-block :: bat
+
+    'This PC -> Open Control Panel -> Region -> Additional Settings'
 
 سپس گزینه Use native digits را اگر از تنظیمات کامل فارسی استفاده می کنید روی Context و الا روی National قرار دهید.
 
