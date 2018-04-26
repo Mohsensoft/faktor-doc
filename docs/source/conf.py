@@ -184,9 +184,3 @@ epub_copyright = copyright
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
 
-
-# -- Extension configuration -------------------------------------------------
-
-
-# Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ["/usr/share/sphinx/themes/"]
