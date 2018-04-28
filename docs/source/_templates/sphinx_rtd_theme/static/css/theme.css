@@ -62,6 +62,22 @@ abbr[title] {
     direction: ltr;
 }
 
+.ms_highlight_rtl {
+    padding: 10px;
+    direction: rtl;
+    font-size: 13px;
+    border: 1px solid #e1e4e5;
+    margin: 1px 0 13px 0;
+}
+
+.ms_highlight_ltr {
+    padding: 10px;
+    direction: ltr;
+    font-size: 13px;
+    border: 1px solid #e1e4e5;
+    margin: 1px 0 13px 0;
+}
+
 b,
 strong {
     font-weight: bold

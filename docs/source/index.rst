@@ -22,7 +22,6 @@
 .. |btnhelp| image:: images/btnhelp.bmp
             :alt: (علامت سوال)
 
-.. _تماس و پشتیبانی: https://mohsensoft.com/support/
 
 .. toctree::
    :maxdepth: 3
