@@ -16,7 +16,11 @@
 | توصیه می شود قبل از استفاده  از نرم افزار ابتدا این راهنما را مطالعه نمایید.
 |
 | اگر در کار با نرم افزار با مشکل و یا سوالی بر خوردید لطفا ابتدا این راهنما را مطالعه نمایید و همچنین توسط قسمت جستجو بدنبال مشکل خود بگردید، سپس اگر باز هم جواب سوال خود را نیافتید میتوانید از طریق قسمت |support_link| در سایت سوال خود را مطرح نمایید.
+|
+| در هر قسمت از نرم افزار میتوانید براحتی با کلیک بر روی |btnhelp| وارد قسمت مربوطه از راهنما شوید.
 
+.. |btnhelp| image:: images/btnhelp.bmp
+            :alt: (علامت سوال)
 
 .. _تماس و پشتیبانی: https://mohsensoft.com/support/
 
@@ -27,17 +31,17 @@
    introduction
    installation
    definitions
-   main-window
-   setting-window
-   page-selection-window
-   bank-window
-   customer-window
+   window-main
+   window-settings
+   window-openpage
+   window-bank
+   window-cust
    backup
    from-old-version
    import-from-excel
-   password-protect-file
+   window-password
    tips
-   download-pages
+   page-download
    design-page-request
    advanced
    faq
