@@ -39,6 +39,7 @@
    from-old-version
    import-from-excel
    window-password
+   cardpay
    tips
    page-download
    design-page-request

@@ -7178,6 +7178,13 @@ span[id*='MathJax-Span'] {
     text-align: center
 }
 
+.more_info{
+    font-size: 9px;
+}
+.more_info::after{
+    content: "[بیشتر بدانید]"
+}
+
 @font-face {
 	font-family: GanjNamehSans-Regular;
 	font-style: normal;
