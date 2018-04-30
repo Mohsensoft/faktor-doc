@@ -54,13 +54,13 @@
 
 | روش اول:
 
-.. image:: images/install_pack1.gif
+.. image:: images/page_Install1.gif
     :alt: روش اول نصب برگه ها
     :align: center
 
 | روش دوم:
 
-.. image:: images/install_pack2.gif
+.. image:: images/page_Install2.gif
     :alt: روش دوم نصب برگه ها
     :align: center
 
