@@ -7178,11 +7178,17 @@ span[id*='MathJax-Span'] {
     text-align: center
 }
 
+/*custom css*/
+
 .more_info{
     font-size: 9px;
 }
 .more_info::after{
     content: "[بیشتر بدانید]"
+}
+
+footer {
+    font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
 }
 
 @font-face {

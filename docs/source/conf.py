@@ -24,7 +24,7 @@ copyright = u'2018, Mohsensoft'
 author = u'Mohammad reza khalifeh'
 
 # The short X.Y version
-version = u''
+version = u'2.0'
 # The full version, including alpha/beta/rc tags
 release = u'.rst'
 
@@ -89,6 +89,18 @@ html_favicon = 'images/icon.ico'
 # documentation.
 #
 # html_theme_options = {}
+
+# --------------- sitemap --------------------
+
+# Guzzle theme options (see theme.conf for more information)
+ html_theme_options = {
+    # Specify a base_url used to generate sitemap.xml links. If not
+    # specified, then no sitemap will be built.
+     'base_url' : '_static'
+
+    # Allow a separate homepage from the master_doc
+    # "homepage" : "index",
+ }
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -185,4 +197,3 @@ epub_copyright = copyright
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
