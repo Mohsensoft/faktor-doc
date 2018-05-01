@@ -1,6 +1,34 @@
+<<<<<<< HEAD
 راهنمای فاکتور ۴
 =======================
 
+=======
+
+.. meta::
+    :description: راهنمای جامع نرم افزار فاکتور، مرجع کامل نرم افزار فاکتور محسن
+
+.. _index:
+
+راهنمای فاکتور  4
+=======================
+
+.. centered:: بسم الله الرحمن الرحیم
+
+.. image:: images/splash.png
+    :alt:  نرم افزار فاکتور
+
+| در این راهنما قصد داریم قسمت های مختلف نرم افزار فاکتور را معرفی کنیم و شما را با امکانات مختلف آن آشنا سازیم.
+| توصیه می شود قبل از استفاده  از نرم افزار ابتدا این راهنما را مطالعه نمایید.
+|
+| اگر در کار با نرم افزار با مشکل و یا سوالی بر خوردید لطفا ابتدا این راهنما را مطالعه نمایید و همچنین توسط قسمت جستجو بدنبال مشکل خود بگردید، سپس اگر باز هم جواب سوال خود را نیافتید میتوانید از طریق قسمت |support_link| در سایت سوال خود را مطرح نمایید.
+|
+| در هر قسمت از نرم افزار میتوانید براحتی با کلیک بر روی |btnhelp| وارد قسمت مربوطه از راهنما شوید.
+
+.. |btnhelp| image:: images/btnhelp.bmp
+            :alt: (علامت سوال)
+
+
+>>>>>>> 8cecb7807c3831e14c2f31cb38bfe37882a856bb
 .. toctree::
    :maxdepth: 3
    :caption:  فهرست مطالب
@@ -8,18 +36,25 @@
    introduction
    installation
    definitions
-   main-window
-   setting-window
-   page-selection-window
-   bank-window
-   customer-window
+   window-main
+   window-settings
+   window-openpage
+   window-bank
+   window-cust
    backup
    from-old-version
    import-from-excel
-   password-protect-file
+   window-password
+   cardpay
    tips
-   download-pages
+   page-download
    design-page-request
    advanced
    faq
    changes-log
+
+
+   
+.. |support_link| raw:: html
+
+    <a href="https://mohsensoft.com/support/" target="_blank">تماس و پشتیبانی</a>

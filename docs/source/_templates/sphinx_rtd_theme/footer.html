@@ -14,6 +14,18 @@
 
   <div role="contentinfo">
     <p>
+
+    
+    {% if theme_display_version %}
+      {%- set nav_version = version %}
+      {% if READTHEDOCS and current_version %}
+        {%- set nav_version = current_version %}
+      {% endif %}
+      {% if nav_version %}
+          ver: {{ nav_version }} . 
+      {% endif %}
+    {% endif %}
+
     {%- if show_copyright %}
       {%- if hasdoc('copyright') %}
         {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
