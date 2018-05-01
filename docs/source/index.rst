@@ -1,13 +1,10 @@
-راهنمای فاکتور  4
+راهنمای فاکتور ۴
 =======================
-
-سلام علیکم
-
 
 .. toctree::
    :maxdepth: 3
    :caption:  فهرست مطالب
-    
+
    introduction
    installation
    definitions
