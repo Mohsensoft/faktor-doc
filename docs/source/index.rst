@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+راهنمای فاکتور ۴
+=======================
+
+=======
 
 .. meta::
     :description: راهنمای جامع نرم افزار فاکتور، مرجع کامل نرم افزار فاکتور محسن
@@ -23,10 +28,11 @@
             :alt: (علامت سوال)
 
 
+>>>>>>> 8cecb7807c3831e14c2f31cb38bfe37882a856bb
 .. toctree::
    :maxdepth: 3
    :caption:  فهرست مطالب
-    
+
    introduction
    installation
    definitions
