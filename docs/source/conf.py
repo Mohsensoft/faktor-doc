@@ -93,14 +93,14 @@ html_favicon = 'images/icon.ico'
 # --------------- sitemap --------------------
 
 # Guzzle theme options (see theme.conf for more information)
- html_theme_options = {
+# html_theme_options = {
     # Specify a base_url used to generate sitemap.xml links. If not
     # specified, then no sitemap will be built.
-     'base_url' : '_static'
+ #    'base_url' : '_static'
 
     # Allow a separate homepage from the master_doc
     # "homepage" : "index",
- }
+ #}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
