@@ -6,6 +6,29 @@
 تغییرات ویرایش ها
 ==========================
 
+**ویرایش 4.3:**
+
+* افزوده شدن امکان خروجی گرفتن از اطلاعات مشتری/متقاضی ها. |cust|
+* افزوده شدن امکان نوشتن متون پیشرفته در فیلدهای مشخصات.
+* افزوده شدن امکان تغییر رنگ مقدار شماره. |settings_print|
+* اضافه شدن امکان مخفی کردن مقدار جمع ستون تعداد. |settings_print|
+* اصلاح و توسعه محاسبه و نمایش اعداد تا 10 رقم اعشار. |settings_calc|
+* افزودن امکان ورود و محاسبه اعداد اعشار در انبار و تعیین سفارش.
+* اصلاح برخی مشکلات در ذخیره شدن تنظیمات.
+* اصلاح خروجی اکسل.
+
+.. |cust| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-cust.html" target="_blank"></a>
+
+.. |settings_print| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-settings.html#setting-print" target="_blank"></a>
+
+.. |settings_calc| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-settings.html#setting-calc" target="_blank"></a>
+
 **ویرایش 4.2:**
 
 * رابط کاربری جدید و بهینه شده.
