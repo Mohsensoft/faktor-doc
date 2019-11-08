@@ -1,5 +1,5 @@
-# [MohsenSoft](http://mohsensoft.com) softwares documentation
-This is the official documentation for the faktor 3 develped in [MohsenSoft](http://mohsensoft.com)
+# [Mohsensoft](http://mohsensoft.com) softwares documentation
+This is the official documentation for the faktor 3 develped in [Mohsensoft](http://mohsensoft.com)
 
 
 
