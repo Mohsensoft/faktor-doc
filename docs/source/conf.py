@@ -24,7 +24,7 @@ copyright = u'2019, Mohsensoft'
 author = u'Mohsen Bahraminejad, Mohammad reza khalifeh'
 
 # The short X.Y version
-version = u'2.4'
+version = u'2.5'
 # The full version, including alpha/beta/rc tags
 release = u'.rst'
 
