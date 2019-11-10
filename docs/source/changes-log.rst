@@ -6,6 +6,40 @@
 تغییرات ویرایش ها
 ==========================
 
+**ویرایش 4.4**
+
+* افزوده شدن امکان تغییر گروهی قیمت ها. |bank_change_price|
+* اضافه شدن پنجره شروع برای انتخاب سریع فایلهای باز شده قبلی و برگه های موجود.
+* افزوده شدن امکان داشتن جدول مجموع از داده هایی که مشترک هستند
+* افزوده شدن امکان مرتب سازی نمایش مشخصات مشتری/متقاضی ها. |cust|
+* افزوده شدن امکان تغییر عنوان فیلدهای مشخصات مشتری/متقاضی و صادر کننده. |tabcom|
+* بهبود خروجی پی دی اف.
+* اضافه شدن امکان ذخیره تنظیمات هر برگه در بسته پشتیبانگیری. |bankup|
+* اضافه شدن امکان ذخیره الگو ها و تنظیمات آنها در بسته پشتیبانگیری. |bankup|
+* افزوده شدن امکانات قالب بندی برای متن پویا. |data_formatting|
+* افزوده شدن امکانات تبدیل عدد و تاریخ به حروف در متن پویا. |data_formatting|
+* افزوده شدن امکان دریافت تعداد سطر جدول در متن پویا. |dynamictext|
+* افزوده شدن کلمه کلیدی "نام" برای گرفتن خط اول نام از مشخصات صادر کننده در متن پویا
+* افزوده شدن کلمه کلیدی "توضیح" برای گرفتن خط دوم نام از مشخصات صادر کننده در متن پویا.
+* بهبود عملکرد بزرگنمایی در حالت پیشنمایش.
+
+.. |bank_change_price| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-bank.html#bank-change-price" target="_blank"></a>
+
+.. |bankup| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/backup.html" target="_blank"></a>
+
+
+.. |tabcom| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-main.html#tab-com" target="_blank"></a>
+
+.. |data_formatting| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/advanced.html#data-formatting" target="_blank"></a>
+
 **ویرایش 4.3:**
 
 * افزوده شدن امکان خروجی گرفتن از اطلاعات مشتری/متقاضی ها. |cust|
