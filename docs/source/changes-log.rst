@@ -6,7 +6,45 @@
 تغییرات ویرایش ها
 ==========================
 
+**ویرایش 4.5**
+-------------------
+
+* افزوده شدن امکان حالت تاریک یا شب برای کاهش فشار بر چشم در نور کم. |bar_settings|
+* افزودن شدن امکان مدیریت فایل مشتری/متقاضی/پروژه ها. |file_manager|
+* امکان نمایش مستقل ده ها نوع فرمت فایل بدون نیاز به نصب اجرا کننده آن فایلها. |file_manager|
+* امکان نمایش محتوای فایل ها بر روی آیکون آنها بدون باز کردنشان. |file_manager|
+* نمایش انواع فرمت های تصویر و ویرایش تصویر مانند فایلهای فوتوشاپ، و انواع دوربین مانند : psd, png, bmp, gif, jpg, jpeg, jpe, tif, tiff, raw, ... .
+* نمایش انواع فرمت های طراحی دو بعدی و سه بعدی مانند : dwg, dxf, dwt, svg, svgz, stl, dwfx, dwf, ... .
+* نمایش انواع فرمت های ویدئویی مانند : wmv, mpg, mpeg, avi, ... .
+* نمایش انواع فرمت های اسناد مانند : pdf, docx, ... .
+* امکان جستجویی پیشرفته در میان فایلها. |file_manager_search|
+* امکان نمایش فایلها در حالت های کوچک و بسیار بزرگ.
+* امکان فیلتر کردن و دسته بندی فایلها بر اساس عنوان هایی نظیر تصویر، ویدئو، اسناد، صوتی، فاکتور و طراحی.
+* نمایش مشخصات فایل مانند نمایش تاریخ آخرین ویرایش و دیگر تاریخ ها به شمسی.
+* افزوده شدن امکان نمایش پیغام هشدار برای عدم انتخاب مشتری/متقاضی/پروژه هنگام گرفتن خروجی. |settings_general|
+
+
+.. |bar_settings| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-main.html#bar-settings" target="_blank"></a>
+
+
+.. |file_manager| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/file-manager.html" target="_blank"></a>
+
+
+.. |file_manager_search| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/file-manager.html#file-manager-search" target="_blank"></a>
+
+
+.. |settings_general| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-settings.html#setting-general" target="_blank"></a>
+
 **ویرایش 4.4**
+-------------------
 
 * افزوده شدن امکان تغییر گروهی قیمت ها. |bank_change_price|
 * اضافه شدن پنجره شروع برای انتخاب سریع فایلهای باز شده قبلی و برگه های موجود.
@@ -41,6 +79,7 @@
     <a class="more_info" href="https://mohsensoft.com/docs/faktor/advanced.html#data-formatting" target="_blank"></a>
 
 **ویرایش 4.3:**
+-------------------
 
 * افزوده شدن امکان خروجی گرفتن از اطلاعات مشتری/متقاضی ها. |cust|
 * افزوده شدن امکان نوشتن متون پیشرفته در فیلدهای مشخصات.
@@ -64,6 +103,7 @@
     <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-settings.html#setting-calc" target="_blank"></a>
 
 **ویرایش 4.2:**
+-------------------
 
 * رابط کاربری جدید و بهینه شده.
 * افزوده شدن امکان انتخاب سریع و مستقیم از انبار در داخل جدول. |qbank|
@@ -96,6 +136,7 @@
 
 
 **ویرایش 4.0.0.430:**
+-----------------------------
 
 * اصلاح جستجوی انبار.
 * افزوده شدن امکان شمارش کلمات یک متن برای برگه هایی که به آن نیاز دارند.
@@ -106,6 +147,7 @@
 
 
 **ویرایش 4.0.0.420:**
+---------------------------
 
 * افزودن امکان فرمت بندی متن ها مانند ضخیم کردن و یا ایتالیک کردن قسمتی از آن. |formatting|
 * افزوده شدن امکان تغییر رنگ هر قسمت از متن ها. |colorize|

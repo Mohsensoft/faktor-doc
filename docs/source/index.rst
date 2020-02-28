@@ -33,6 +33,7 @@
    window-openpage
    window-bank
    window-cust
+   file-manager
    backup
    from-old-version
    import-from-excel
