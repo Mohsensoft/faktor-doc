@@ -7,6 +7,12 @@
 =================
 در این بخش عملیات های خاصی که میتوانید با نرم افزار انجام دهید شرح داده می شود، برای درک و استفاده از این موارد نیاز به دانش بیشتری در زمینه کامپیوتر وجود دارد.
 
+.. raw:: html
+
+    <div id="11685886177"><script type="text/JavaScript" src="https://www.aparat.com/embed/NuA5f?data[rnddiv]=11685886177&data[responsive]=yes"></script></div>
+
+|
+
 .. _text-formatting:
 
 فرمت بندی متن

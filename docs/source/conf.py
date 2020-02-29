@@ -43,6 +43,10 @@ extensions = [
     'sphinx.ext.githubpages',
 ]
 
+rst_epilog = """
+.. |newflag| image:: /images/newflag.png
+"""
+
 #pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
 
 # Add any paths that contain templates here, relative to this directory.
