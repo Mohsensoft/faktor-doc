@@ -52,11 +52,26 @@
         wmv, mpg, mpeg, avi
 
 
-* **اسناد :** شامل اسناد رایج پر استفاده
+* **اسناد :** شامل اسناد رایج پر استفاده مانند :
 
     .. code-block:: bat
 
         pdf
+
+
+* **متن :** شامل انواع فرمت های متنی پر استفاده مانند :
+
+    .. code-block:: bat
+
+        txt, ini, inf, md
+
+
+* **کد برنامه نویسی :** شامل انواع فرمت های کد منبع مانند :
+
+    .. code-block:: bat
+
+        php, js, java, cs, css, html, vb, py, xml, cpp, c, class, h, pl, sh, swift
+        jsp, asp, rss, jsx, json, htm, rst, conf, xaml, pas
 
 
 | از کاربرد های این امکان میتوان به مدیریت فایلهای مشتریان یک عکاسی و یا یک طراح نام برد.

@@ -6,6 +6,53 @@
 تغییرات ویرایش ها
 ==========================
 
+**ویرایش 5.2**
+-------------------
+* اضافه شدن امکان الحاق الگو به برگه باز شده. |template|
+* امکان الحاق سطر های جدول به سطرهای موجود وارد شده توسط الگو. |template|
+* افزوده شدن امکان پر کردن خودکار سلولهای جدول با یک متن ثابت، عدد افزایشی و یا سطرهای یک فایل متنی. |gride|
+* اضافه شدن امکان غیر فعال کردن پاک شدن اطلاعات  فیلدهای مشخصات مشتری/متقاضی/پروژه زمانی که برگه ای جدید یا گزینه جدید انتخاب میشود. |settings_general|
+* اضافه شدن امکان پاک کردن لیست سوابق فایلهای باز شده. |settings_save|
+* افزوده شدن امکان جستجو در بین برگه های نصب شده. |select_page|
+* بهبود مدیریت حافظه و افزایش سرعت نرم افزار.
+* بهبود نمایش لیست سوابق فایل های باز شده در منوی اصلی.
+
+.. |template| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-main.html#template" target="_blank"></a>
+
+.. |gride| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-main.html#gride" target="_blank"></a>
+
+.. |settings_save| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-settings.html#setting-save" target="_blank"></a>
+
+.. |select_page| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-openpage.html" target="_blank"></a>
+
+**ویرایش 5.1**
+-------------------
+* افزوده شدن امکان چاپ سریع. |bar_output_print|
+* افزوده شدن امکان چاپ همزمان بر روی چند پرینتر. |bar_output_print|
+* افزوده شدن پیشنمایش فایلهای متنی به قسمت مدیریت فایل مانند فرمتهای : txt, ini, inf , ... .
+* افزوده شدن پیشنمایش فایلهای کد منبع برنامه نویسی به قسمت مدیریت فایل مانند فرمتهای : php, asp, jsp, java, js, cs, vb , ... . |file-preview|
+* افزوده شدن امکان انتخاب ستونهای قیمت در گزارش های قسمت انبار. |bank|
+* افزودن شدن امکان تغییر عنوان قسمت های فروشنده و خریدار. |tabcom|
+* عدم محاسبه سطرهای خالی و نمایش ندادن ستونهای محاسبه شده در آن سطر ها.
+
+
+.. |bar_output_print| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-main.html#bar-output-print" target="_blank"></a>
+
+.. |file-preview| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/file-manager.html#file-manager-file-preview" target="_blank"></a>
+
+
 **ویرایش 5.0**
 -------------------
 
