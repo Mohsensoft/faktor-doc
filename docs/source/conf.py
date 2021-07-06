@@ -20,11 +20,11 @@
 # -- Project information -----------------------------------------------------
 
 project = u' راهنمای نرم افزار فاکتور'
-copyright = u'2020, Mohsensoft'
+copyright = u'2021, Mohsensoft'
 author = u'Mohsen Bahraminejad, Mohammad reza khalifeh'
 
 # The short X.Y version
-version = u'2.8'
+version = u'2.9'
 # The full version, including alpha/beta/rc tags
 release = u'.rst'
 

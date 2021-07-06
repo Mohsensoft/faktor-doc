@@ -8,13 +8,22 @@
 
 **ویرایش 5.3**
 -------------------
-* اضافه شدن امکان وارد کردن مستقیم فرمول ریاضی در جدول. |template|
-* اضافه شدن امکان تعیین نام پیشفرض برای ذخیره فایل. |template|
-* اضافه شدن گزینه هایی برای تنظیم خروجی csv. |template|
-* اضافه شدن دسترسی به کادر توضیحات و جمع نهایی به متن پویا. |template|
-* بهبود جستجو در انبار. |template|
-* اصلاح برخی موارد در گزارش انبار. |template|
-* اصلاح گزینه حذف سابقه فایلهای باز شده. |template|
+* اضافه شدن امکان وارد کردن مستقیم فرمول ریاضی در جدول. |inlinecalc|
+* اضافه شدن امکان تعیین نام پیشفرض برای ذخیره فایل. |settings_save|
+* اضافه شدن گزینه هایی برای تنظیم خروجی csv. |settings_export|
+* اضافه شدن دسترسی به کادر توضیحات و جمع نهایی به متن پویا. |dynamictext|
+* بهبود جستجو در انبار.
+* اصلاح برخی موارد در گزارش انبار.
+* اصلاح گزینه حذف سابقه فایلهای باز شده. |settings_save|
+  
+
+.. |inlinecalc| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-main.html#inlinecalc" target="_blank"></a>
+
+.. |settings_export| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/window-settings.html#setting-export" target="_blank"></a>
 
 
 **ویرایش 5.2**
