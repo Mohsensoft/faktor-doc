@@ -43,6 +43,7 @@
    page-download
    design-page-request
    advanced
+   calculator
    faq
    changes-log
 
