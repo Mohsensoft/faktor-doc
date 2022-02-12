@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u' راهنمای نرم افزار فاکتور'
-copyright = u'2021, Mohsensoft'
-author = u'Mohsen Bahraminejad, Mohammad reza khalifeh'
+project = ' راهنمای نرم افزار فاکتور'
+copyright = '2021, Mohsensoft'
+author = 'Mohsen Bahraminejad, Mohammad reza khalifeh'
 
 # The short X.Y version
-version = u'4.0'
+version = '4.0'
 # The full version, including alpha/beta/rc tags
-release = u'.rst'
+release = '.rst'
 
 
 # -- General configuration ---------------------------------------------------
@@ -150,7 +150,7 @@ latex_elements = {
 
     # Additional stuff for the LaTeX preamble.
     #
-     'preamble': '\usepackege{xepersian}',
+     'preamble': '\\usepackege{xepersian}',
 
     # Latex figure (float) alignment
     #
@@ -161,8 +161,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'faktor-doc.tex', u'faktor-doc Documentation',
-     u'MohsenSoft', 'manual'),
+    (master_doc, 'faktor-doc.tex', 'faktor-doc Documentation',
+     'MohsenSoft', 'manual'),
 ]
 
 
@@ -171,7 +171,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'faktor-doc', u'faktor-doc Documentation',
+    (master_doc, 'faktor-doc', 'faktor-doc Documentation',
      [author], 1)
 ]
 
@@ -182,7 +182,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'faktor-doc', u'faktor-doc Documentation',
+    (master_doc, 'faktor-doc', 'faktor-doc Documentation',
      author, 'faktor-doc', 'One line description of project.',
      'Miscellaneous'),
 ]
@@ -207,3 +207,4 @@ epub_copyright = copyright
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
+
