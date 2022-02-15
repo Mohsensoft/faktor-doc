@@ -17,11 +17,16 @@
 * امکان وارد کردن شماره ی مشتری ها و یا کپی مستقیم از جدول برای گیرندگان پیامک.
 * ظاهر جدید گزینه محاسبه بصورت درصد در فیلد های پایانی.
 * اضافه شدن امکان تنظیم شماره زنی مستقل برای هر صادر کننده. |setting-numbering|
+* افزوده شدن امکان نگهداری ده ذخیره آخر یک فایل برای پشتیبان و مواقع ضروری. |file_recovery|
 
 
 .. |service_sms| raw:: html
 
     <a class="more_info" href="https://mohsensoft.com/docs/faktor/service-sms.html" target="_blank"></a>
+
+.. |file_recovery| raw:: html
+
+    <a class="more_info" href="https://mohsensoft.com/docs/faktor/backup.html#recovery-file" target="_blank"></a>
     
 
 **ویرایش 5.4**
