@@ -10,4 +10,8 @@
    .wy-table-responsive {
       overflow: visible !important;
    }
+
+   nav ul{
+      padding: 0;
+   }
 }
