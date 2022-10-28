@@ -12,11 +12,18 @@
 -----------------------------
 نسبت به ویندوز خود یکی از مسیر های زیر را دنبال کنید:
 
-برای ویندوز ایکس پی:
+در ویندوز 11:
 
 .. code-block :: bat
 
-    'Start -> Control Panel –> Regional and Language Options -> Customize'
+    'Settings -> Time & language -> Language & region -> Administrative language settings -> Format -> Additional settings'
+
+
+در ویندوز 8 و 10:
+
+.. code-block :: bat
+
+    'This PC -> Open Control Panel -> Region -> Additional Settings'
 
 برای ویندوز 7:
 
@@ -24,11 +31,11 @@
 
     'Start -> Control Panel -> Regional and Language -> Additional Settings'
 
-در ویندوز 8 و 10:
+برای ویندوز ایکس پی:
 
 .. code-block :: bat
 
-    'This PC -> Open Control Panel -> Region -> Additional Settings'
+    'Start -> Control Panel –> Regional and Language Options -> Customize'
 
 سپس گزینه Use native digits را اگر از تنظیمات کامل فارسی استفاده می کنید روی Context و الا روی National قرار دهید.
 
@@ -43,6 +50,8 @@
 .. image:: images/win_region_adv_currency.png
     :alt: تنظیمات صحیح پول ویندوز
     :align: center
+
+|
 
 .. _faq-install-page:
 
