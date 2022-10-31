@@ -8,7 +8,7 @@
 
 .. centered:: بسم الله الرحمن الرحیم
 
-.. image:: images/faktor6_splash.jpg
+.. image:: images/faktor6.1_splash.jpg
     :alt:  نرم افزار فاکتور
 
 |
