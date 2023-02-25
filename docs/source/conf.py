@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = ' راهنمای نرم افزار فاکتور'
-copyright = '2022, Mohsensoft'
+copyright = '2023, Mohsensoft'
 author = 'Mohsen Bahraminejad, Mohammad reza khalifeh'
 
 # The short X.Y version
