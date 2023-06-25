@@ -38,6 +38,7 @@
    window-bank
    window-cust
    service-sms
+   mtax
    file-manager
    backup
    from-old-version
