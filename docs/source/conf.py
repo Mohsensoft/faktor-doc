@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = ' راهنمای نرم افزار فاکتور'
+project = 'راهنمای نرم افزار فاکتور'
 copyright = '2023, Mohsensoft'
 author = 'Mohsen Bahraminejad, Mohammad reza khalifeh'
 
@@ -87,6 +87,9 @@ html_theme_path = ["_templates/"]
 html_search_language = 'fa'
 
 html_favicon = 'images/icon.ico'
+
+html_title = project
+#'نرم افزاری محسن'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
