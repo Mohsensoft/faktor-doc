@@ -27,29 +27,44 @@
 
 .. toctree::
    :maxdepth: 3
-   :caption:  فهرست مطالب
+   :caption:  شروع به کار
 
    introduction
-   installation
    definitions
+   installation
+   page-download
+   tips
+
+.. toctree::
+   :maxdepth: 3
+   :caption:  پنجره ها
+
    window-main
    window-settings
    window-openpage
    window-bank
    window-cust
+
+.. toctree::
+   :maxdepth: 3
+   :caption:  امکانات جانبی
+
    service-sms
    mtax
    file-manager
-   backup
-   from-old-version
-   import-from-excel
-   window-password
-   cardpay
-   tips
-   page-download
-   design-page-request
-   advanced
    calculator
+   cardpay
+   backup
+   import-from-excel
+
+.. toctree::
+   :maxdepth: 3
+   :caption:  تکمیلی
+
+   advanced
+   window-password
+   design-page-request
+   from-old-version
    faq
    changes-log
 

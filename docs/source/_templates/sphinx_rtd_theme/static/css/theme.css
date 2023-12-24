@@ -5920,17 +5920,19 @@ article ol li ul li {
 
 .wy-menu-vertical header,
 .wy-menu-vertical p.caption {
+    color: #55a5d9;
     height: 32px;
     display: inline-block;
-    line-height: 32px;
+    line-height: 40px;
     padding: 0 1.618em;
     margin-bottom: 0;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 80%;
-    color: #6f6f6f;
-    white-space: nowrap
+    font-size: 90%;
+    white-space: nowrap;
+    margin-top: 0.5em;
+    padding-right: 1em;
 }
 
 .wy-menu-vertical ul {
