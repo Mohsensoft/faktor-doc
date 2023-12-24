@@ -28,6 +28,8 @@
     <link rel="canonical" href="{{ theme_canonical_url }}{{ pagename }}.html"/>
   {% endif %}
 
+  <script type="text/javascript" src="{{ pathto('_static/js/jquery.js', 1) }}"></script>
+
   {# CSS #}
 
   {# OPENSEARCH #}
@@ -191,6 +193,7 @@
         };
     </script>
     {%- for scriptfile in script_files %}
+      <script src="_static/language_data.js"></script>
       <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
     {%- endfor %}
 
@@ -200,6 +203,7 @@
   {% if not READTHEDOCS %}
     <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
   {% endif %}
+
 
   <script type="text/javascript">
       jQuery(function () {
