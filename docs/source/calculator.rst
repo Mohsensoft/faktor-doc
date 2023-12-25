@@ -3,7 +3,7 @@
 
 .. _calculator:
 
-|newflag| ماشین حساب
+ماشین حساب
 ====================
 .. image:: images/calculator.png
     :alt:  ماشین حساب

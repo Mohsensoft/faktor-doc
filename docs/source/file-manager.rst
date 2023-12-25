@@ -3,7 +3,7 @@
 
 .. _file-manager:
 
-|newflag| مدیریت فایل
+مدیریت فایل
 =========================
 .. image:: images/tab_file.png
     :alt: پنجره مشتری/متقاضی
