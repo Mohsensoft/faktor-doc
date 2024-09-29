@@ -24,7 +24,7 @@ copyright = '2024, Mohsensoft'
 author = 'Mohsen Bahraminejad, Mohammad reza khalifeh'
 
 # The short X.Y version
-version = '4.71'
+version = '4.72'
 # The full version, including alpha/beta/rc tags
 release = '.rst'
 
