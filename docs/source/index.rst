@@ -3,12 +3,12 @@
 
 .. _index:
 
-راهنمای فاکتور  6
+راهنمای فاکتور  7
 =======================
 
 .. centered:: بسم الله الرحمن الرحیم
 
-.. image:: images/faktor6.1_splash.jpg
+.. image:: images/faktor7_splash.jpg
     :alt:  نرم افزار فاکتور
 
 |
@@ -52,6 +52,7 @@
    service-sms
    mtax
    file-manager
+   fileproc
    calculator
    cardpay
    backup
