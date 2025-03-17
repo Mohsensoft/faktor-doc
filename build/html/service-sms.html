@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fa" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fa" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<meta content="از این سرویس میتوانید برای ارسال پیامک های اطلاع رسانی و تبلیغاتی به صورتی پیشرفته و سریع استفاده کنید." name="description" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>سرویس ارسال پیامک &mdash; راهنمای نرم افزار فاکتور</title><!---->
+  
+
+  
+  
+  
+  
+
+  <script type="text/javascript" src="_static/js/jquery.js"></script>
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="فهرست" href="genindex.html" />
+    <link rel="search" title="جستجو" href="search.html" />
+    <link rel="next" title="ارتباط با سامانه مودیان" href="mtax.html" />
+    <link rel="prev" title="پنجره مشتری/متقاضی/پروژه" href="window-cust.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> راهنمای نرم افزار فاکتور
+          
+
+          
+          </a>
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="جستجو" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">شروع به کار</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">معرفی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="definitions.html">تعاریف</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">نصب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page-download.html">دانلود و نصب برگه ها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tips.html">نکته‌ها</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">پنجره ها</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="window-main.html">پنجره اصلی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="window-settings.html">پنجره تنظیمات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="window-openpage.html">پنجره انتخاب برگ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="window-bank.html">پنجره انبار</a></li>
+<li class="toctree-l1"><a class="reference internal" href="window-cust.html">پنجره مشتری/متقاضی/پروژه</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">امکانات جانبی</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">سرویس ارسال پیامک</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sms-send-general">ارسال پیامک</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sms-send-ad">ارسال پیامک تبلیغاتی</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">گروه ها و شماره ها</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">مشتری / متقاضی</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">الگوی پیام</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">الگوها</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#sms-add-pattern-ad">افزودن الگوی پیامک تبلیغاتی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sms-send">ارسال پیامک اطلاع رسانی</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sms-buy">خرید بسته پیامک</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sms-manage">مدیریت سرویس و ارسال ها</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mtax.html">ارتباط با سامانه مودیان</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file-manager.html">مدیریت فایل</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fileproc.html"> پردازش فایل</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculator.html">ماشین حساب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cardpay.html">پرداخت توسط دستگاه کارت خوان</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backup.html">پشتیبان گیری</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import-from-excel.html">ورود اطلاعات از فایل اکسل</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">تکمیلی</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced.html">پیشرفته</a></li>
+<li class="toctree-l1"><a class="reference internal" href="window-password.html">رمزفایل</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design-page-request.html">درخواست طراحی برگه</a></li>
+<li class="toctree-l1"><a class="reference internal" href="from-old-version.html">مهاجرت از نسخه های قبلی</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">سوالات متداول</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes-log.html">تغییرات ویرایش ها</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">راهنمای نرم افزار فاکتور</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">راهنما</a> &raquo;</li>
+        
+      <li>سرویس ارسال پیامک</li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="service-sms">
+<span id="id1"></span><h1>سرویس ارسال پیامک<a class="headerlink" href="#service-sms" title="Permalink to this heading">¶</a></h1>
+<p>در نرم افزار فاکتور قابلیتی قرار داده شده است که بتوانید براحتی و بصورت پیشرفته انواع پیامک های تبلیغاتی و اطلاع رسانی ارسال نمایید.</p>
+<p>برای ارسال پیامک در نرم افزار فاکتور دو روش وجود دارد:</p>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li><p>استفاده از سرویس پیامک نرم افزاری محسن.</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>استفاده از سرویس پیامک سایر شرکت ها بصورت مستقیم.</p></li>
+</ol>
+</li>
+</ul>
+<p>این دو حالت را میتوانید از طریق قست <a class="reference internal" href="window-settings.html#setting-sms"><span class="std std-ref">تنظیمات سرویس پیامک</span></a> تغییر دهید.</p>
+<p>در حالت اول بعلت محدودیت های اوپراتورها در محتوای پیامک و بوجود آمدن مسئولیت برای &quot;ارسال لینک، شماره تماس و شماره کارت&quot; محدودیت هایی وجود دارد و برای استفاده از این محدودیت ها میتوانید از روش دوم استفاده نمایید.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<section id="sms-send-general">
+<span id="id2"></span><h2>ارسال پیامک<a class="headerlink" href="#sms-send-general" title="Permalink to this heading">¶</a></h2>
+<p>برای ارسال پیامک در حالت سرویس اختصاصی پیامک میبایست تنظیمات مربوطه را در قسمت <a class="reference internal" href="window-settings.html#setting-sms"><span class="std std-ref">تنظیمات سرویس پیامک</span></a> انجام دهید.</p>
+<p>برای ارسال پیامک در حالت استفاده از سرویس پیامک نرم افزاری محسن ابتدا میبایست وارد حساب کاربریتان در نرم افزار شوید، این حساب کاربری همان حساب کاربری سایت میباشد.
+برای این کار گزینه <strong>وضعیت</strong> در نوار عمومی قسمت سرویس را انتخاب نمایید تا کادر زیر در کنار پنجره نرم افزار باز گردد:</p>
+<img alt="کادر وضعیت سرویس" class="align-center" src="_images/service_statuslist.png" />
+<p>در این کادر وضعیت ورود شما و درخواست های ارسال شده و وضعیت آنها نمایش داده میشود.</p>
+<p>توسط گزینه اول که در تصویر بالا سبز رنگ میباشد میتوانید وارد حساب کاربری خود شوید، پس از کلیک کردن روی آن، پنجره ورود نمایش داده میشود که با وارد کردن نام کاربری (شماره موبایل) و رمز عبور میتوانید وارد حساب کاربری خود شوید، این ورود تا یک ماه اعتبار دارد و نیاز به ورود مجدد برای هر بار باز شدن نرم افزار نیست.</p>
+<p>پس از وارد شدن به حساب کاربری رنگ این گزینه سبز میشود که نشان از صحت ورود شماست در غیراینصورت این گزینه قرمز است.</p>
+<p><strong>وضعیت سرویسها/شارژ سرویس</strong>: در حالت استفاده از سرویس پیامک نرم افزاری محسن این گزینه برای انتقال به <a class="reference external" href="https://mohsensoft.com/account/services">قسمت سرویس از پروفایل</a> شما در سایت میباشد که در آنجا میتوانید وضعیت کامل سرویسها و شارژ آنها را انجام دهید، در حالت استفاده از سرویس اختصاصی پیامک در صورت تنظیم <a class="reference internal" href="window-settings.html#setting-sms"><span class="std std-ref">آدرس پنل مدیریت پیامک در پنجره تنظیمات</span></a> به لینک تنظیم شده منتقل خواهید.</p>
+<p><strong>جزئیات پیامک مشتری</strong>: توسط این دو گزینه در حالت استفاده از سرویس پیامک نرم افزاری محسن ریز پیامک های ارسال شده به مشتری انتخابی در قسمت <a class="reference internal" href="window-main.html#tab-cust"><span class="std std-ref">مشتری/متقاضی/پروژه</span></a> را خواهید دید.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="sms-send-ad">
+<span id="id3"></span><h2>ارسال پیامک تبلیغاتی<a class="headerlink" href="#sms-send-ad" title="Permalink to this heading">¶</a></h2>
+<p>با انتخاب گزینه <strong>ارسال پیامک تبلیغاتی</strong> در نوار عمومی پنجره زیر باز خواهد شد</p>
+<img alt="کادر وضعیت سرویس" class="align-center" src="_images/service_sms_send_ad.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">توجه</p>
+<ul class="simple">
+<li><p>شماره هایی که برای ارسال پیامک تبلیغاتی استفاده میکنید را میتوانید از نظر بلک لیست بودن چک کنید، توصیه میشود لیست های پیامک تبلیغاتی را یکبار بررسی نمایید و سپس در گروه مورد نظر دسته بندی کنید.</p></li>
+<li><p>برای چک کردن وضعیت بلک لیست یک شماره میتوانید از <a class="reference external" href="https://mohsensoft.com/service/sms/checkblacklist">صفحه بررسی وضعیت بلک لیست</a> استفاده نمایید.</p></li>
+</ul>
+</div>
+<p>در این پنجره پنج بخش وجود دارد:</p>
+<section id="id4">
+<h3>گروه ها و شماره ها<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h3>
+<p>این قسمت برای دسته بندی شماره ها بکار می رود، مانند تصویر میتوانید گروه های مختلفی برای ارسال پیامک تبلیغاتی درست کنید تا براحتی و بسرعت به آنها پیامک ارسال نمایید.</p>
+<p>در روبروی عنوان هر بخش گزینه هایی برای افزودن، حذف کردن و ویرایش مورد انتخاب شده وجود دارد.</p>
+<p>در قسمت شماره ها میتوانید علاوه بر افزودن شماره جدید بصورت تکی آنها را از بخش &quot;مشتری/متقاض&quot; و یا از منوی جلوی نام بخش از یک لیست متن و یا جدول اکسل مستقیما وارد نمایید.</p>
+<p>توجه : نرم افزار بصورت خودکار امکان وجود شماره تکراری را نمیدهد.</p>
+</section>
+<section id="id5">
+<h3>مشتری / متقاضی<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h3>
+<p>این قسمت شماره های <a class="reference internal" href="window-cust.html#window-cust"><span class="std std-ref">مشتری/متقاضی/پروژه</span></a> های شما را نمایش میدهد که توسط سه گزینه بالا سمت راست میتوانید آنها را انتخاب و تیک دار کنید و توسط گزینه آخر موارد تیک دار شده را به لیست شماره ها برای ارسال اضافه نمایید.</p>
+</section>
+<section id="id6">
+<h3>الگوی پیام<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h3>
+<p>علاوه بر نوشتن عادی پیام مورد نظر امکان استفاده از <a class="reference internal" href="advanced.html#dynamic-text"><span class="std std-ref">متن پویا</span></a> در پیام ممکن میباشد که متن را منعطف و ارسال را سریعتر خواهد کرد، برای اطلاع بیشتر در مورد متن پویا به قسمت <a class="reference internal" href="advanced.html#dynamic-text"><span class="std std-ref">پیشرفته</span></a> از راهنما مراجعه نمایید.</p>
+<p>به محض نوشتن الگوی مورد نظر در کادر کادر توسی رنگ بالا خروجی آن در پایین نمایش داده میشود، همچنین در کنار گزینه ارسال تعداد پیامک مصرفی این متن و تعداد باقیمانده تا مقدار پیامک بعدی نمایش داده میشود.</p>
+</section>
+<section id="id7">
+<h3>الگوها<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h3>
+<p>در این قسمت میتوانید لیستی از الگو ها ایجاد نمایید و یک نام مناسب برای یافتن آن در نظر بگیرید.، توسط گزینه های بالای آن نیز میتوانید الگو انتخابی را ویرایش، حذف یا مورد جدیدی اضافه کنید.</p>
+<p>توسط گزینه های جهت دار بالای لیست میتوانید ترتیب لیست را تغییر دهید، این ترتیب همان ترتیب نمایش آنها در قسمت <a class="reference internal" href="window-main.html#bar-sms"><span class="std std-ref">نوار پیامک</span></a> از پنجره اصلی برای دسترسی سریع هستند.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+<section id="sms-add-pattern-ad">
+<span id="id8"></span><h2>افزودن الگوی پیامک تبلیغاتی<a class="headerlink" href="#sms-add-pattern-ad" title="Permalink to this heading">¶</a></h2>
+<p>اگر الگوهای موجود نیاز شما را برطرف نمیکند میتوانید الگوی مورد نظرتان را اضافه نمایید.
+برای این کار کافیست گزینه <code class="code docutils literal notranslate"><span class="pre">+</span></code> در جلو عنوان &quot;الگوها&quot; را انتخاب نمایید تا پنجره زیر باز گردد:</p>
+<img alt="افزودن الگوی پیامک تبلیغاتی" class="align-center" src="_images/service_sms_add_pattern_ad.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>در این پنجره ابتدا نام الگو را انتخاب نمایید، سپس متن مورد نظرتان را برای الگوی پیام وارد نمایید.</p>
+<p>در هنگام وارد کردن متن الگو اگر مشکلی در پیام تشخیص داده شد پیغام آن در کادر کناری با عنوان &quot;پیامها&quot; نمایش داده خواهد شد.</p>
+<p>در نوشتن الگوی پیام میتوانید از منوی این بخش که با کلیک بر روی گزینه سه خط بالای کادر ورود متن باز میشود کمک بگیرید:</p>
+<img alt="منوی افزودن الگوی پیامک تبلیغاتی" class="align-center" src="_images/service_sms_add_pattern_menu.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>در این منو چهار مورد اول <a class="reference internal" href="advanced.html#dynamic-text"><span class="std std-ref">متن پویا</span></a> ی مربوط به فاکتور، مشتری، صادر کننده و فیلدهای پایانی موجود در برگه کنونی به همراه الگوهای موجود برای استفاده از آنها برای نوشتن یک الگوی جدید وجود دارد، که براحتی با کلیک بر روی آنها <a class="reference internal" href="advanced.html#dynamic-text"><span class="std std-ref">متن پویا</span></a> ی مربوطه وارد متن الگو میشود.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="sms-send">
+<span id="id9"></span><h2>ارسال پیامک اطلاع رسانی<a class="headerlink" href="#sms-send" title="Permalink to this heading">¶</a></h2>
+<p>اگر از حالت سرویس اختصاصی پیامک استفاده میکنید  میبایست طبق قوانین سرویس دهنده خود عمل نمایید، در این حالت نیازی به تائید صادر کننده و الگو نیست و این موارد در سیستم شما ذخیره میشودند.</p>
+<p>تفاوت پیام تبلیغاتی و پیامک اطلاع رسانی این است که در پیامک تبلیغاتی پیام ارسال شده تنها به افزادی خواهد رسید که دریافت این نوع پیامک را مسدود نکرده باشند ولی پیامک اطلاع رسانی به همه ارسال خواهد شد.</p>
+<p>به خاطر همین حالت پیامک های اطلاع رسانی، اوپراتورها محدودیت هایی برای ارسال آن در نظر گرفته اند که میبایست رعایت شوند.
+از جمله این محدودیت ها میتوان به ممنوعیت <strong>ارسال لینک</strong> ، <strong>شماره تماس</strong>، <strong>آدرس فضای مجازی</strong> و اجبار به مشخص بودن <strong>نام ارسال کننده</strong> پیام اشاره کرد.
+از این رو برای ارسال پیامک اطلاع رسانی میبایست نام صادر کننده های خود را در قسمت پروفایل از سایت مشخص نمایید تا بتوانیم آنرا در پیام ارسال شده تشخیص و صحت سنجی کنیم. در این صفحه نیز روش کار توضیح داده خواهد شد.</p>
+<p>روش ارسال پیامک اطلاع رسانی شبیه به پیامک تبلیغاتی میباشد اما در موارد زیر با هم تفاوت دارند:</p>
+<p>طبق موارد گفته شده اگر از سرویس پیامک نرم افزاری محسن استفاده میکنید میبایست حتما نام ارسال کننده در متن پیام وجود داشته باشد، برای تشخیص این نام ابتدا میبایست وارد پروفایل خود در سایت شوید و در <a class="reference external" href="https://mohsensoft.com/account/servicesuserdata/company">قسمت صادر کننده از پروفایل</a> نام های مورد نظرتان را ثبت نماید و منتظر تائید آنها بمانید:</p>
+<img alt="قسمت صادر کننده از پروفایل" class="align-center" src="_images/service_sms_page_coms.png" />
+<p>در این صفحه کافیست در کادر بالای لیست نام صادر کننده مورد نظرتان را وارد نمایید و گزینه <code class="code docutils literal notranslate"><span class="pre">+</span></code> را انتخاب نمایید، سپس منتظر بمانید تا وضعیت آن به &quot;پذیرفته شده&quot; تغییر یابد. تائید نام ممکن است نهایتا تا یک روز کاری زمان ببرد.</p>
+<p>پس از تائید صادر کننده میتوانید پیامک اطلاع رسانی ارسال نمایید.</p>
+<p><strong>افزودن الگو</strong> برای پیامک اطلاع رسانی  نیز کمی با پیامک تبلیغاتی تفاوت دارد، اگر از سرویس پیامک نرم افزاری محسن استفاده میکنید به علت موارد گفته شده میبایست الگوی پیامک اطلاع رسانی مورد تائید قرار گیرد.</p>
+<div class="admonition note">
+<p class="admonition-title">توجه</p>
+<ul class="simple">
+<li><p>در اول پیام از کلمات خطاب کننده (مثل ، کاربر گرامی - اولیای محترم - مشتری گرامی و...) استفاده نمائید.</p></li>
+<li><p>اسم شرکت ، شخص یا نام ارسال کننده متن میبایست حتما مشخص باشد.</p></li>
+</ul>
+</div>
+<p>برای این کار در پنجره افزودن الگو، پیام به <a class="reference external" href="https://mohsensoft.com/account/servicesuserdata/smstemplate">قسمت الگوی پیامک اطلاع رسانی از پروفایل</a> شما افزوده میشود و میتوانید از طریق این صفحه وضعیت آنرا مشاهده نمایید. همانطور که مشاهده میکنید ارسال الگوی پیامک اطلاع رسانی تنها از طریق نرم افزار امکان پذیر است:</p>
+<img alt="صفحه الگوی پیامک اطلاع رسانی از پروفایل" class="align-center" src="_images/service_sms_page_pattern.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>پس از تائید الگو در پنجره ارسال پیامک اطلاع رسانی در نرم افزار فاکتور گزینه &quot;<strong>بازخوانی لیست الگو ها از سرور</strong>&quot; در جلو عنوان الگوها که به رنگ سبز میباشد را انتخاب نمایید تا لیست الگو های قابل استفاده شما بروز شود:</p>
+<img alt="پنجره ارسال پیامک اطلاع رسانی" class="align-center" src="_images/service_sms_send.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="sms-buy">
+<span id="id10"></span><h2>خرید بسته پیامک<a class="headerlink" href="#sms-buy" title="Permalink to this heading">¶</a></h2>
+<p>اگر از سرویس اختصاصی پیامک استفاده میکنید برای خرید بسته میبایست به سایت خدمات دهنده انتخابیتان مراجعه نمایید و دیگر نیازی به خرید بسته در سایت نرم افزاری محسن نیست.</p>
+<p>اگر از سرویس پیامک نرم افزاری محسن استفاده میکنید به علت هزینه بر بودن ارسال پیامک میبایست قبل از ارسال، کیف پول حساب کاربری خود را شارژ نمایید .ما سعی کرده ایم کمترین تعرفه پیامک را برای شما ارائه دهیم.</p>
+<p>برای این کار کافیست به قسمت <a class="reference external" href="https://mohsensoft.com/account/wallet">کیف پول</a> در سایت مراجعه نمایید.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="sms-manage">
+<span id="id11"></span><h2>مدیریت سرویس و ارسال ها<a class="headerlink" href="#sms-manage" title="Permalink to this heading">¶</a></h2>
+<p>برای مشاهده جزئیات پیامهای ارسال شده و باقیمانده اعتبار میتوانید وارد <a class="reference external" href="https://mohsensoft.com/account/services">قسمت سرویس از پروفایل</a> خود شوید و نوع سرویس را انتخاب کنید تا جزئیات آن بصورت زیر به نمایش درآید:</p>
+<img alt="مدیریت سرویس ها" class="align-center" src="_images/service_sms_page_manage.png" />
+<p>در این صفحه ریز پیامهای ارسال شده نمایش داده میشوند.
+در قسمت جزیات سطرهای تیره تر نمایانگر هر درخواست هستند که ممکن است در آن درخواست مانند پیامکهای تبلیغاتی چندین شماره زیر مجموعه با سطر روشنتر باشد.</p>
+<p>در سطرهای روشن نیز شماره گیرنده بهمراه وضعیت و متن پیام و در آخر نیز هزینه آن پیام نمایش داده میشود.</p>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="mtax.html" class="btn btn-neutral float-right" title="ارتباط با سامانه مودیان" accesskey="n" rel="next">بعدی <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="window-cust.html" class="btn btn-neutral" title="پنجره مشتری/متقاضی/پروژه" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> قبلی</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    
+    
+      
+      
+          ver: 5.1 . 
+      
+    
+        &copy; Copyright 2024, Mohsensoft.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'.rst',
+            LANGUAGE:'fa',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            LINK_SUFFIX: '.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
+      <script src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/sphinx_highlight.js"></script>
+      <script src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28497381-2']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</body>
+</html>
