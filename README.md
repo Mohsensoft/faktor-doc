@@ -2,6 +2,14 @@
 This is the official documentation for the faktor 3 develped in [Mohsensoft](http://mohsensoft.com)
 
 
+بسم الله الرحمن الرحیم
+
+راهنمای نرم افزار فاکتور
+
+نسخه آنلاین را میتوانید از آدرس همیشگی زیر مشاهده نمایید:
+
+https://mohsensoft.github.io/faktor-doc
+
 
 ## Licence
 Unless otherwise specified, everything in this repository is covered by the following licence:
