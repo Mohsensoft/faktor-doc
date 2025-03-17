@@ -1,5 +1,5 @@
 
-docs/build/
+docs/build/doctrees
 docs/source/_build
 nbproject/
 docs/source/.vscode/
