@@ -1,3 +1,6 @@
 build/doctrees
 source/_build
 .vscode/
+/build
+/ai/embedprpair/text
+/ai/out
