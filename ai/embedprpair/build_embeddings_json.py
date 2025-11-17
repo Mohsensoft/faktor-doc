@@ -22,12 +22,14 @@ import hashlib
 import json
 import re
 from dataclasses import dataclass
+from html import escape
 from pathlib import Path
 from typing import Iterable, List
 
 WORKSPACE_ROOT = Path(__file__).parent.resolve()
 TEXT_DIR = WORKSPACE_ROOT / "text"
 OUTPUT_PATH = WORKSPACE_ROOT / "embeddings.jsonl"
+OUTPUT_HTML_PATH = WORKSPACE_ROOT / "embeddings.html"
 
 # Chunking defaults tuned for common embedding models (approx. 700-1100 tokens)
 DEFAULT_CHUNK_SIZE = 1400  # characters
@@ -192,19 +194,25 @@ def chunk_text(text: str, chunk_size: int = DEFAULT_CHUNK_SIZE, overlap: int = D
     chunks: List[str] = []
     start = 0
     n = len(text)
+    end = n - 1
+    # find all headers positions like ===, ----, ~~~, ****, etc with regex
+    # headersRegex = re.compile(r"(^[\=]{3,}|^[\-]{3,}|^[~]{3,}|^[\^]{3,}|^[`]{3,}|^[']{3,}|^[\"]{3,}|^[\*]{3,}|^[\+]{3,}|^[#]{3,}|^[_]{3,}|^[.]{3,}|:\*\*)") #([=\-~^`'\"*+#_.]{3,}|:\*\*)
+    # headersRegex = re.compile(r"(([\w ]+)\n([=]{3,}|^[-]{3,}|^[~]{3,}|^[\^]{3,}|^[`]{3,}|^[']{3,}|^[\"]{3,}|^[\*]{3,}|^[\+]{3,}|^[#]{3,}|^[_]{3,}|^[.]{3,})|^\*\*([\w ]+):\*\*)")
+    # get start positions of headers
+    # headerRegs = headersRegex.finditer(text)
+    headerRegs = re.match(r"(([\w ]+)\n([=]{3,}|^[\-]{3,}|^[~]{3,}|^[\^]{3,}|^[`]{3,}|^[']{3,}|^[\"]{3,}|^[\*]{3,}|^[\+]{3,}|^[#]{3,}|^[_]{3,}|^[.]{3,})|^\*\*([\w ]+):\*\*)", text, re.UNICODE);
+    headersPos = []
+    for reg in headerRegs:
+        headersPos.append(reg.start())
+    #headersPos = [match.start() for match in headerRegs]
     while start < n:
-        end = min(n, start + chunk_size)
+        # find next header position
+        nextHeaderPos = next((pos for pos in headersPos if pos > start), n)
+        end = nextHeaderPos
         chunk = text[start:end]
-        # Expand to nearest paragraph boundary if possible (look forward)
-        if end < n:
-            next_para = text.find("\n\n", end, min(n, end + 200))
-            if next_para != -1:
-                end = next_para + 2
-                chunk = text[start:end]
         chunks.append(chunk.strip())
-        if end >= n:
-            break
-        start = max(end - overlap, 0)
+        start = end
+
     # Filter empty chunks
     return [c for c in chunks if c]
 
@@ -225,9 +233,13 @@ def build_records() -> List[ChunkRecord]:
     for path in iter_text_files(TEXT_DIR):
         raw = read_text_file(path)
         # First, remove Sphinx/reST markups, then normalize whitespace
+        chunks = chunk_text(raw)
+        # then normalize whitespace and remove sphinx markups for each chunk
+        for chunk in chunks:
+            chunk = normalize_whitespace(strip_sphinx_markup(chunk))
+
         cleaned = normalize_whitespace(strip_sphinx_markup(raw))
         title = derive_title(path.name, cleaned)
-        chunks = chunk_text(cleaned)
         # Guarantee at least one chunk (even if file is empty after cleaning)
         if not chunks:
             chunks = [""]
@@ -254,10 +266,69 @@ def write_json(records: List[ChunkRecord], out_path: Path) -> None:
             f.write(json.dumps(obj, ensure_ascii=False) + "\n")
 
 
+def write_html(records: List[ChunkRecord], out_path: Path) -> None:
+    """
+    Generate an HTML table view of the records for easier manual inspection,
+    especially with mixed Persian/Latin text.
+    """
+    with out_path.open("w", encoding="utf-8", newline="\n") as f:
+        f.write(
+            "<!DOCTYPE html>\n"
+            "<html lang=\"fa\" dir=\"rtl\">\n"
+            "<head>\n"
+            "  <meta charset=\"utf-8\" />\n"
+            "  <title>Embeddings Preview</title>\n"
+            "  <style>\n"
+            "    body { font-family: sans-serif; direction: rtl; }\n"
+            "    table { border-collapse: collapse; width: 100%; }\n"
+            "    th, td { border: 1px solid #ccc; padding: 6px 8px; vertical-align: top; }\n"
+            "    th { background: #f5f5f5; position: sticky; top: 0; }\n"
+            "    td.ltr { direction: ltr; text-align: left; font-family: monospace; }\n"
+            "    tr:nth-child(even) { background: #fafafa; }\n"
+            "    .text-cell { white-space: pre-wrap; }\n"
+            "  </style>\n"
+            "</head>\n"
+            "<body>\n"
+            "  <h1>Embeddings Records</h1>\n"
+            f"  <p>تعداد رکوردها: {len(records)}</p>\n"
+            "  <table>\n"
+            "    <thead>\n"
+            "      <tr>\n"
+            "        <th>ردیف</th>\n"
+            "        <th>ID</th>\n"
+            "        <th>URL</th>\n"
+            "        <th>عنوان</th>\n"
+            "        <th>Chunk #</th>\n"
+            "        <th>متن</th>\n"
+            "      </tr>\n"
+            "    </thead>\n"
+            "    <tbody>\n"
+        )
+        for idx, r in enumerate(records, start=1):
+            f.write(
+                "      <tr>\n"
+                f"        <td class=\"ltr\">{idx}</td>\n"
+                f"        <td class=\"ltr\">{escape(r.id)}</td>\n"
+                f"        <td class=\"ltr\"><a href=\"{escape(r.url)}\" target=\"_blank\">{escape(r.url)}</a></td>\n"
+                f"        <td>{escape(r.title)}</td>\n"
+                f"        <td class=\"ltr\">{r.chunk_index}</td>\n"
+                f"        <td class=\"text-cell\">{escape(r.text)}</td>\n"
+                "      </tr>\n"
+            )
+        f.write(
+            "    </tbody>\n"
+            "  </table>\n"
+            "</body>\n"
+            "</html>\n"
+        )
+
+
 def main() -> None:
     records = build_records()
     write_json(records, OUTPUT_PATH)
+    write_html(records, OUTPUT_HTML_PATH)
     print(f"Wrote {len(records)} records to {OUTPUT_PATH}")
+    print(f"Wrote HTML preview to {OUTPUT_HTML_PATH}")
 
 
 if __name__ == "__main__":

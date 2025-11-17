@@ -4,3 +4,5 @@ source/_build
 /build
 /ai/embedprpair/text
 /ai/out
+/ai/**/*.html
+/ai/**/*.jsonl
