@@ -89,23 +89,10 @@ def normalize_whitespace(text: str) -> str:
     text = "\n".join(_collapse_internal_spaces(line) for line in text.split("\n"))
     return text.strip()
 
-
-def strip_sphinx_markup(text: str) -> str:
-    """
-    Remove common Sphinx/reStructuredText markups while keeping readable content.
-    - Drop adornment lines (====, ----, ~~~, ****, etc.)
-    - Handle overline+underline headings by keeping the title line only
-    - Strip Sphinx roles: :role:`text` -> text
-    - Simplify links: `label <url>`_ -> label, `name`_ -> name
-    - Unwrap inline literals/emphasis: ``code``/**bold**/*italic* -> plain
-    - Drop directive lines like: .. note::, .. code-block:: (but keep following content)
-    - Replace substitutions: |name| -> name
-    - Remove bracket tags like [label][ref] or [label]
-    """
+def strip_sphinx_header_markup(text: str) -> str:
     lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
-    out: List[str] = []
     adorn_re = re.compile(r"[=\-~^`:'\"*+#_.]{3,}\s*$")
-    directive_re = re.compile(r"\.\.\s+[\w-]+::")
+    out: List[str] = []
 
     i = 0
     n = len(lines)
@@ -123,6 +110,46 @@ def strip_sphinx_markup(text: str) -> str:
             # Otherwise, treat as simple underline for previous title: skip
             i += 1
             continue
+        i += 1
+    out = [ln for ln in out if not adorn_re.fullmatch(ln or "")]
+    return "\n".join(out)
+
+
+def strip_sphinx_markup(text: str) -> str:
+    """
+    Remove common Sphinx/reStructuredText markups while keeping readable content.
+    - Drop adornment lines (====, ----, ~~~, ****, etc.)
+    - Handle overline+underline headings by keeping the title line only
+    - Strip Sphinx roles: :role:`text` -> text
+    - Simplify links: `label <url>`_ -> label, `name`_ -> name
+    - Unwrap inline literals/emphasis: ``code``/**bold**/*italic* -> plain
+    - Drop directive lines like: .. note::, .. code-block:: (but keep following content)
+    - Replace substitutions: |name| -> name
+    - Remove bracket tags like [label][ref] or [label]
+    """
+    lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
+    out: List[str] = []
+    #adorn_re = re.compile(r"[=\-~^`:'\"*+#_.]{3,}\s*$")
+    directive_re = re.compile(r"\.\.\s+[\w-]+::")
+
+    i = 0
+    n = len(lines)
+    while i < n:
+        line = lines[i]
+        """
+        # Overline + title + underline (same char)
+        if adorn_re.fullmatch(line or ""):
+            ch = line.strip()[0] if line.strip() else ""
+            if ch and i + 2 < n and adorn_re.fullmatch(lines[i + 2] or ""):
+                if lines[i + 2].strip()[0] == ch:
+                    # Keep the middle line as title, skip both adornment lines
+                    out.append(lines[i + 1])
+                    i += 3
+                    continue
+            # Otherwise, treat as simple underline for previous title: skip
+            i += 1
+            continue
+        """
 
         # Directive line: remove it, keep subsequent content
         if directive_re.match(line.strip()):
@@ -151,7 +178,7 @@ def strip_sphinx_markup(text: str) -> str:
         i += 1
 
     # Remove standalone adornment lines that might remain
-    out = [ln for ln in out if not adorn_re.fullmatch(ln or "")]
+    #out = [ln for ln in out if not adorn_re.fullmatch(ln or "")]
     return "\n".join(out)
 
 
@@ -197,10 +224,11 @@ def chunk_text(text: str, chunk_size: int = DEFAULT_CHUNK_SIZE, overlap: int = D
     end = n - 1
     # find all headers positions like ===, ----, ~~~, ****, etc with regex
     # headersRegex = re.compile(r"(^[\=]{3,}|^[\-]{3,}|^[~]{3,}|^[\^]{3,}|^[`]{3,}|^[']{3,}|^[\"]{3,}|^[\*]{3,}|^[\+]{3,}|^[#]{3,}|^[_]{3,}|^[.]{3,}|:\*\*)") #([=\-~^`'\"*+#_.]{3,}|:\*\*)
-    # headersRegex = re.compile(r"(([\w ]+)\n([=]{3,}|^[-]{3,}|^[~]{3,}|^[\^]{3,}|^[`]{3,}|^[']{3,}|^[\"]{3,}|^[\*]{3,}|^[\+]{3,}|^[#]{3,}|^[_]{3,}|^[.]{3,})|^\*\*([\w ]+):\*\*)")
+    # headersRegex = re.compile(r"(([\w ]+)\n([=]{3,}|[\-]{3,}|[~]{3,}|[\^]{3,}|[`]{3,}|[']{3,}|[\"]{3,}|[\*]{3,}|[\+]{3,}|[#]{3,}|[_]{3,}|[.]{3,})|^\*\*([\w ]+):\*\*)")
+    headersRegex = re.compile(r"(([\w ]+)\n[(\=|\-|\~|\^|\`|\'|\"|\*|\+|\#|\_|\.)]{3,}|^\*\*([\w ]+):\*\*)")
     # get start positions of headers
-    # headerRegs = headersRegex.finditer(text)
-    headerRegs = re.match(r"(([\w ]+)\n([=]{3,}|^[\-]{3,}|^[~]{3,}|^[\^]{3,}|^[`]{3,}|^[']{3,}|^[\"]{3,}|^[\*]{3,}|^[\+]{3,}|^[#]{3,}|^[_]{3,}|^[.]{3,})|^\*\*([\w ]+):\*\*)", text, re.UNICODE);
+    headerRegs = headersRegex.finditer(text)
+    # headerRegs = re.match(r"(([\w ]+)\n([=]{3,}|^[\-]{3,}|^[~]{3,}|^[\^]{3,}|^[`]{3,}|^[']{3,}|^[\"]{3,}|^[\*]{3,}|^[\+]{3,}|^[#]{3,}|^[_]{3,}|^[.]{3,})|^\*\*([\w ]+):\*\*)", text, re.UNICODE);
     headersPos = []
     for reg in headerRegs:
         headersPos.append(reg.start())
@@ -233,10 +261,11 @@ def build_records() -> List[ChunkRecord]:
     for path in iter_text_files(TEXT_DIR):
         raw = read_text_file(path)
         # First, remove Sphinx/reST markups, then normalize whitespace
+        raw = strip_sphinx_markup(raw)
         chunks = chunk_text(raw)
         # then normalize whitespace and remove sphinx markups for each chunk
         for chunk in chunks:
-            chunk = normalize_whitespace(strip_sphinx_markup(chunk))
+            chunk = normalize_whitespace(strip_sphinx_header_markup(chunk))
 
         cleaned = normalize_whitespace(strip_sphinx_markup(raw))
         title = derive_title(path.name, cleaned)

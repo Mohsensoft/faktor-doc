@@ -47,6 +47,57 @@ rst_epilog = """
 .. |newflag| image:: /images/newflag.png
 """
 
+rst_prolog = """
+.. role:: color-0-0-0
+   :class: color-0-0-0
+.. role:: color-255-0-0
+   :class: color-255-0-0
+.. role:: color-0-255-0
+   :class: color-0-255-0
+.. role:: color-0-0-255
+   :class: color-0-0-255
+.. role:: color-0-255-255
+   :class: color-0-255-255
+.. role:: color-190-140-190
+   :class: color-190-140-190
+.. role:: color-50-50-50
+   :class: color-50-50-50
+.. role:: color-190-0-0
+   :class: color-190-0-0
+.. role:: color-0-190-0
+   :class: color-0-190-0
+.. role:: color-0-0-190
+   :class: color-0-0-190
+.. role:: color-255-0-255
+   :class: color-255-0-255
+.. role:: color-190-140-140
+   :class: color-190-140-140
+.. role:: color-160-160-160
+   :class: color-160-160-160
+.. role:: color-160-0-0
+   :class: color-160-0-0
+.. role:: color-0-160-0
+   :class: color-0-160-0
+.. role:: color-0-0-160
+   :class: color-0-0-160
+.. role:: color-255-255-0
+   :class: color-255-255-0
+.. role:: color-140-190-140
+   :class: color-140-190-140
+.. role:: color-255-255-255
+   :class: color-255-255-255
+.. role:: color-140-0-0
+   :class: color-140-0-0
+.. role:: color-0-140-0
+   :class: color-0-140-0
+.. role:: color-0-0-140
+   :class: color-0-0-140
+.. role:: color-0-160-255
+   :class: color-0-160-255
+.. role:: color-140-140-190
+   :class: color-140-140-190
+"""
+
 #pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Your Name'),]
 
 # Add any paths that contain templates here, relative to this directory.

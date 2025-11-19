@@ -63,7 +63,7 @@ abbr[title] {
     text-align: left;
 }
 
-.ms_highlight_rtl {
+.ms-highlight-rtl {
     padding: 10px;
     direction: rtl;
     font-size: 13px;

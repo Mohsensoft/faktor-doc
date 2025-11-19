@@ -20,3 +20,33 @@ iframe {
     border: 0;
     border-radius: 3px;
 }
+
+.color-0-0-0 { color: #000 !important; }
+.color-255-0-0 { color: #f00 !important; }
+.color-0-255-0 { color: #0f0 !important; }
+.color-0-0-255 { color: #00f !important; }
+.color-0-255-255 { color: #0ff !important; }
+.color-190-140-190 { color: #be8cbe !important; }
+.color-50-50-50 { color: #323232 !important; }
+.color-190-0-0 { color: #be0000 !important; }
+.color-0-190-0 { color: #00be00 !important; }
+.color-0-0-190 { color: #0000be !important; }
+.color-255-0-255 { color: #f0f !important; }
+.color-190-140-140 { color: #be8c8c !important; }
+.color-160-160-160 { color: #a0a0a0 !important; }
+.color-160-0-0 { color: #a00000 !important; }
+.color-0-160-0 { color: #00a000 !important; }
+.color-0-0-160 { color: #0000a0 !important; }
+.color-255-255-0 { color: #ff0 !important; }
+.color-140-190-140 { color: #8cbe8c !important; }
+.color-255-255-255 {
+    color: #fff !important;
+    background-color: #4a4a4a;
+    padding: 0 4px;
+    border-radius: 2px;
+}
+.color-140-0-0 { color: #8c0000 !important; }
+.color-0-140-0 { color: #008c00 !important; }
+.color-0-0-140 { color: #00008c !important; }
+.color-0-160-255 { color: #00a0ff !important; }
+.color-140-140-190 { color: #8c8cbe !important; }
