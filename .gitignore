@@ -1,7 +1,7 @@
 build/doctrees
 source/_build
 .vscode/
-/build
+/build/
 /ai/embedprpair/text
 /ai/out
 /ai/**/*.html
